@@ -1,0 +1,64 @@
+.mainContainer {
+    width: 100%;
+    background: linear- gradeint(135deg, #65d2e0, #d1eaf0);
+    box-shadow: 0 3px 10px rgba (0, 0, 0, 0.15);
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.fodoLogo {
+    font-size: 35px;
+    animation: bounce 2s infinite;
+}
+
+.listItems {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.listItems li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+    position: relative;
+}
+
+.listItems li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: 0.3s;
+}
+
+.listItems li a:hover::after {
+    width: 100%;
+}
+
+.listItems li a:hover {
+    color: #fff8dc;
+}
