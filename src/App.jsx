@@ -8,6 +8,9 @@ import Contact from "./components/Contact";
 import "./index.css";
 
 const App = () => {
+
+let [cart, setCart] = useState([])
+
   return (
     <BrowserRouter>
       <Navbar />
