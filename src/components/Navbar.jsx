@@ -3,7 +3,7 @@ import "../components/Navbar.css";
 import { IoMdCart } from "react-icons/io";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({cart, setCart}) => {
   return (
     <div className='mainContainer'>
       <nav>
@@ -16,7 +16,7 @@ const Navbar = () => {
       <li> <Link to={'/about'}>About</Link> </li>
       <li> <Link to={'/contact'}>Contact</Link> </li>
       <li>
-        <Link to ={'/cart'}> <IoMdCart /></Link>
+        <Link to ={'/cart'}> <IoMdCart />{cart.lebgth}</Link>
       
       </li>
     </ul>
