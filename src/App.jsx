@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -13,7 +13,7 @@ let [cart, setCart] = useState([])
 
   return (
     <BrowserRouter>
-      <Navbar cart={cart} srtCart={setCart}/>
+      <Navbar cart={cart} setCart={setCart}/>
       <Routes>
         <Route path="/" element={<Home cart={cart} setCart={setCart} />} />
         <Route path="/about" element={<About />} />

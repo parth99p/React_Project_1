@@ -26,7 +26,7 @@ let addToCart = (product)=> {
             <h1>{item.name}</h1>
             <p>blah blahb laljasf jdjfd</p>
             <p className='price'>Price: &#8377; {item.price}</p>
-            <button>Add to Cart</button>
+            <button onClick={()=>addToCart(item)}>Add to Cart</button>
             </div>
         )
     })}

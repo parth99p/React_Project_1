@@ -16,7 +16,7 @@ const Navbar = ({cart, setCart}) => {
       <li> <Link to={'/about'}>About</Link> </li>
       <li> <Link to={'/contact'}>Contact</Link> </li>
       <li>
-        <Link to ={'/cart'}> <IoMdCart />{cart.lebgth}</Link>
+        <Link to ={'/cart'}> <IoMdCart />{cart.length}</Link>
       
       </li>
     </ul>
