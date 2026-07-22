@@ -1,7 +1,7 @@
 .mainContainer {
     width: 100%;
-    background: linear- gradeint(135deg, #65d2e0, #d1eaf0);
-    box-shadow: 0 3px 10px rgba (0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #65d2e0, #d1eaf0);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
 nav {
@@ -23,7 +23,7 @@ nav {
     cursor: pointer;
 }
 
-.fodoLogo {
+.foodLogo {
     font-size: 35px;
     animation: bounce 2s infinite;
 }
@@ -61,4 +61,48 @@ nav {
 
 .listItems li a:hover {
     color: #fff8dc;
+}
+
+.listItems li:last-child a {
+    font-size: 24px;
+    background: white;
+    color: #65d2e0;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.listItems li:last-child a:hover {
+    transform: scale(1.1) rotate(10deg);
+    background: #fff8dc;
+}
+
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .listItems {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+   .logo {
+        font-size: 24px;
+    }
 }
