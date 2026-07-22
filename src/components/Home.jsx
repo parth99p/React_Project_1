@@ -21,7 +21,7 @@ import vegfriedrice from "../assets/vegfriedrice.jpg";
 import vegnoodles from "../assets/vegnoodles.jpg";
 import Card from "../components/Card";
 
-const Home = () => {
+const Home = ({cart, setCart}) => {
 
 let cardData = [
   {
@@ -142,7 +142,7 @@ let cardData = [
 
 return (
   <div>
-    <Card cardData={cardData} />
+    <Card cardData={cardData} cart={cart} setCart={setCart} />
   </div>
 )
 }

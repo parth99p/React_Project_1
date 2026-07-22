@@ -1,7 +1,22 @@
 import React from "react";
 import "../components/Card.css";
 
-const Card = ({ cardData }) => {
+const Card = ({ cardData, cart, setCart }) => {
+
+let addToCart = (product)=> {
+  let newCart = [...cart];
+
+  let item  = newCart.find((i) => i.id === product.id)
+
+  if (item) {
+    item.qty++;
+  } else {
+    newCart.push({ ...product, qty: 1})
+  }
+
+  setCart(newCart)
+}
+
   return (
     <div className='card-container'>
     {cardData.map((item) => {
