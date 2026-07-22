@@ -1,5 +1,6 @@
 .mainContainer {
     width: 100%;
+    height: 80px; /* Increase as needed */
     background: linear-gradient(135deg, #65d2e0, #557d86);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
