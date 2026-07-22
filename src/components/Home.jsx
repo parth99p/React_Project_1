@@ -19,6 +19,7 @@ import vadausal from "../assets/vadausal.jpg";
 import vegbiryani from "../assets/vegbiryani.jpg";
 import vegfriedrice from "../assets/vegfriedrice.jpg";
 import vegnoodles from "../assets/vegnoodles.jpg";
+import Card from "./Card";
 
 const Home = () => {
 
@@ -141,9 +142,9 @@ let cardData = [
 
 return (
   <div>
-    <h1>Home</h1>
+    <card cardData={cardData}/>
   </div>
-);
-};
+)
+}
 
 export default Home; 

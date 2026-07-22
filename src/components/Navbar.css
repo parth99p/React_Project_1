@@ -1,6 +1,6 @@
 .mainContainer {
     width: 100%;
-    background: linear-gradient(135deg, #65d2e0, #d1eaf0);
+    background: linear-gradient(135deg, #65d2e0, #557d86);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -25,7 +25,7 @@ nav {
 
 .foodLogo {
     font-size: 35px;
-    animation: bounce 2s infinite;
+    animation: bounce 1s infinite;
 }
 
 .listItems {

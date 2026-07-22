@@ -8,7 +8,7 @@ const Navbar = () => {
     <div className='mainContainer'>
       <nav>
         <div className='logo'>
-          <div className='foodLogo'>🍗</div>
+          <div className='foodLogo'>🍗🍴</div>
           <div>Indian Masala Restaurant</div>
       </div>
     <ul className='listItems'>
