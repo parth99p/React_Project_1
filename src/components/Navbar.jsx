@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "../components/Navbar.css";
 import { IoMdCart } from "react-icons/io";
 import { Link } from "react-router-dom";
+import { IoFastFoodOutline } from "react-icons/io5";
 
 const Navbar = ({cart, setCart}) => {
+
+let [show, setShow] = useState(false)
+
   return (
     <div className='mainContainer'>
       <nav>
         <div className='logo'>
-          <div className='foodLogo'>🍗</div>
+          <div className='foodLogo'><IoFastFoodOutline /></div>
           <div>Indian Masala Restaurant</div>
       </div>
     <ul className='listItems'>
@@ -16,11 +20,14 @@ const Navbar = ({cart, setCart}) => {
       <li> <Link to={'/about'}>About</Link> </li>
       <li> <Link to={'/contact'}>Contact</Link> </li>
       <li>
-        <Link to ={'/cart'}> <IoMdCart />{cart.length}</Link>
+        <Link to ={'/cart'} onClick={() => setShow(!show)}> <IoMdCart />{cart.length}</Link>
       
       </li>
     </ul>
     </nav>
+
+{show && <cartSidebar show ={show} setShow={setShow}/>}
+
 </div>
 
    
