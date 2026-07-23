@@ -1,0 +1,96 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: -4px 0 12px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 1;
+    
+}
+
+.closeBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.closeBtn:hover {
+    transform: scale(1.1);
+}
+
+.sidebar h2 {
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.cartItem {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fffcf7;
+}
+
+.cartItem img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+    background-color: #ddd;
+}
+
+.cartInfo{
+    flex: 1;
+}
+
+.cartInfo p {
+    margin: 5px 0;
+}
+
+cartInfo p:first-child {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cartInfo p:last-child {
+    color: #ff5722;
+    font-size: 16px;
+}
+
+.qtyButton {
+    display:flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.qtyButton button {
+    width: 32px;
+    height: 32px;
+    border: none;
+    background-color: #ff9800;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.qtyButton button:hover {
+    background-color: #f57c00;
+}
+
+.qtyButton button:nth-child(2) {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    cursor: default;
+}

@@ -3,6 +3,7 @@ import "../components/Navbar.css";
 import { IoMdCart } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { IoFastFoodOutline } from "react-icons/io5";
+import CartSidebar from "./CartSidebar"
 
 const Navbar = ({cart, setCart}) => {
 
@@ -26,7 +27,7 @@ let [show, setShow] = useState(false)
     </ul>
     </nav>
 
-{show && <cartSidebar show ={show} setShow={setShow}/>}
+{show && <CartSidebar show ={show} setShow={setShow}/>}
 
 </div>
 
