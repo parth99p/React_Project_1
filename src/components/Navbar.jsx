@@ -27,12 +27,12 @@ let [show, setShow] = useState(false)
     </ul>
     </nav>
 
-{show && <CartSidebar show ={show} setShow={setShow}/>}
+{show && <CartSidebar show ={show} setShow={setShow} cart={cart} setCart={setCart}/>}
 
 </div>
 
    
-  );
-};
+  )
+}
 
 export default Navbar;
