@@ -81,6 +81,28 @@ nav {
     background: #fff8dc;
 }
 
+.cartIcon{
+    width: 55px;
+    height: 55px;
+    background: #FFF8DC;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+    color: #65d2e0;
+    font-size: 28px;
+    cursor: pointer;
+
+    transition: transform 0.4s ease;
+}
+
+/* Rotate the entire circle on hover */
+.cartIcon:hover{
+    transform: rotate(20deg);
+}
 
 @keyframes bounce {
     0%, 100% {

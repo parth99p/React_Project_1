@@ -21,9 +21,11 @@ let [show, setShow] = useState(false)
       <li> <Link to={'/about'}>About</Link> </li>
       <li> <Link to={'/contact'}>Contact</Link> </li>
       
-      <li>
-        <Link to ={'/cart'} onClick={() => setShow(!show)}> <IoMdCart />{cart.length}</Link>
-      </li>
+      <div className="cartIcon" onClick={() => setShow(true)}>
+  <IoMdCart />
+  <span>{cart.length}</span>
+</div>
+
 
     </ul>
     </nav>

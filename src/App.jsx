@@ -18,6 +18,7 @@ let [cart, setCart] = useState([])
         <Route path="/" element={<Home cart={cart} setCart={setCart} />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        
       </Routes>
       {/* <Footer /> */}
     </BrowserRouter>
