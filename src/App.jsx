@@ -20,7 +20,7 @@ let [cart, setCart] = useState([])
         <Route path="/contact" element={<Contact />} />
         
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </BrowserRouter>
   );
 };
