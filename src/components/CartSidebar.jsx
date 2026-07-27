@@ -70,7 +70,7 @@ let removeQty = (index)=> {
     <h2 style={{ padding: "10px 20px" }}>Scan and Pay</h2>
 
     <QRCodeSVG
-      value={"Parthpatil4999@oksbi"}
+      value={"parthpatil4999@okicici"}
       size={200}
     />
 
